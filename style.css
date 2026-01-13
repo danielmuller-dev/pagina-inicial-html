@@ -80,3 +80,26 @@ footer {
         padding: 15px;
     }
 }
+
+/* Links sociais */
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    background: #eef1f5;
+    color: #333;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3 ease;
+}
+
+.links a:hover {
+    background: #dbe1ea;
+    transform: translateY(-2px);
+}
