@@ -1,28 +1,82 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+*{
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #222;
-    color: #fff;
-    padding: 40px;
-    text-align: center;
+/* Fontes e cores */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
 }
 
-main {
+/* Container geral */
+header, main, footer {
+    max-width: 900px;
+    margin: auto;
     padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
+/* Header */
+header {
+    text-align: center;
+    margin-top: 10px;
 }
 
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Seções */
+section {
+    background: #ffffff;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Titulos */
+section h2 {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: #eef1f5;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Footer */
 footer {
-    background-color: #222;
-    color: #fff;
     text-align: center;
-    padding: 10px;
+    margin: 40px 0 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8 rem;
+    }
+
+    section {
+        padding: 15px;
+    }
 }
